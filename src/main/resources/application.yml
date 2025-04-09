@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: tts-zonos
+  docker:
+    compose:
+      readiness:
+        timeout: 30m
+      wait:
+        log-patterns:
+          zonos: "Uvicorn running on"
+      lifecycle-management: start_only

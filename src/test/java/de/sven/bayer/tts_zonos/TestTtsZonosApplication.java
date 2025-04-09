@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 public class TestTtsZonosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.from(TtsZonosApplication::main).with(TestcontainersConfiguration.class).run(args);
+		SpringApplication.from(TtsZonosApplication::main).run(args);
 	}
 
 }
